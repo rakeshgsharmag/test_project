@@ -1,0 +1,15 @@
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+List:
+    path:      /add-team
+    defaults:  { _controller: AppBundle:Demo:addTeam }
+Add:
+    path:      /display-list/{id}
+    defaults:  { _controller: AppBundle:Demo:displayList, id: null }
+Delete:
+    path:      /delete-leauge/{id}
+    defaults:  { _controller: AppBundle:Demo:deleteLeauge , id: null}
+Update:
+    path:      /update-team
+    defaults:  { _controller: AppBundle:Demo:updateTeam }
